@@ -95,7 +95,7 @@ const DiscTest = () => {
               onAnswerChange={handleAnswerChange}
             />
           ))}
-          <Button type="submit" variant="primary">
+          <Button type="submit" variant="primary" size="lg" className="mt-3">
             Nộp
           </Button>
         </Form>
@@ -131,7 +131,7 @@ const Question = ({
   const questionNumber = (currentPage - 1) * DISC_PER_PAGE + index + 1;
 
   return (
-    <Form.Group key={question.id}>
+    <Form.Group key={question.id} className="mt-3">
       <Form.Label>
         {questionNumber}. {question.text}
       </Form.Label>
