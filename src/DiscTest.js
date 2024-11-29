@@ -7,10 +7,10 @@ const DiscTest = () => {
   const [answers, setAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
 
-  const handleAnswerChange = (questionId, value) => {
+  const handleAnswerChange = (questionId, text) => {
     setAnswers((prevAnswers) => ({
       ...prevAnswers,
-      [questionId]: value,
+      [questionId]: text,
     }));
   };
 
@@ -47,9 +47,9 @@ const DiscTest = () => {
                       label={answer.text}
                       name={question.id}
                       value={answer.value}
-                      id={`question-${question.id}-answer-${answer.value}`} // Add id to associate label
+                      id={`question-${question.id}-answer-${answer.text}`} // Add id to associate label
                       onChange={() =>
-                        handleAnswerChange(question.id, answer.value)
+                        handleAnswerChange(question.id, answer.text)
                       }
                     />
                   </Col>
