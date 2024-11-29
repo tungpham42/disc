@@ -1,0 +1,8 @@
+.radio-pointer {
+  cursor: pointer; /* Enables the pointer cursor */
+  width: fit-content;
+}
+
+.radio-pointer .form-check-label {
+  cursor: pointer; /* Ensures the pointer cursor is also enabled on the label */
+}

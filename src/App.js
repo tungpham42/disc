@@ -3,7 +3,7 @@ import DiscTest from "./DiscTest";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App col-md-12 mx-auto">
       <DiscTest />
     </div>
   );
